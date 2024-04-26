@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* navbar style */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: #030303;
+  color: white;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px 40px;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.nav-title {
+  margin-left: 20px;
+}
+
+.nav-title h1 {
+  font-size: 25px;
+  text-transform: uppercase;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-items {
+  flex-grow: 1; /* Allow the navigation items to take up remaining space */
+  text-align: right; /* Align the items to the right */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-items ul {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.nav-items ul li {
+  display: inline-block; /* Display items in a line */
+  margin-left: 20px; /* Add margin between navigation items */
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.homepage-image img {
+  width: 100%;
 }
