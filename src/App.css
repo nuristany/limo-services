@@ -2,18 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 /* navbar style */
 
 .navbar {
+  position: fixed;
+  width: 100%;
   background-color: #030303;
   color: white;
   display: flex;
   align-items: center;
   padding: 20px 40px;
+  z-index: 1000; /* Adjust the value as needed */
+  
 }
+
 
 .logo img {
   width: 60px;
@@ -45,21 +49,20 @@
   margin-left: 20px; /* Add margin between navigation items */
   font-size: 20px;
   text-transform: uppercase;
- 
 }
-.nav-items  a {
-color: white;
+.nav-items a {
+  color: white;
   text-decoration: none;
 }
 
-
-
 /* navbar small screen style */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .navbar {
     flex-direction: column;
     padding: 10px;
+   
   }
+
   .nav-items {
     text-align: center;
     margin-top: 10px;
@@ -72,6 +75,7 @@ color: white;
 
 .homepage-container {
   width: 100%;
+  height: 100%;
 }
 .homepage-image {
   position: relative;
@@ -150,4 +154,88 @@ color: white;
     padding: 10px; /* Add padding */
     text-align: center; /* Center-align text */
   }
+}
+
+/* style for contact page */
+
+.contacts-container {
+  display: flex;
+}
+
+.contact-left {
+  width: 100%;
+  height: 150vh;
+  background-color: aliceblue;
+  
+  
+}
+.contact-right {
+  width: 100%;
+  height: 150vh;
+  background-color: rgb(70, 67, 67);
+  padding-top: 110px;
+}
+.contact-right h1 {
+  color: white;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.contact-left-text {
+  padding-top: 150px;
+  padding-left: 40px;
+}
+.contact-left-text p {
+  width: 80%;
+}
+
+.form-container form {
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-right: 20px;
+}
+.input-field input {
+  display: block;
+  background-color: rgb(70, 67, 67);
+  border: none;
+  padding: 30px;
+}
+  
+  
+  
+
+.input-field input::placeholder {
+  color: rgb(134, 132, 132);
+}
+
+.form-container button {
+  margin-top: 10px;
+  background-color: rgb(117, 117, 123);
+  border: none;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  cursor: pointer;
+}
+.form-container button:hover {
+  background-color: aliceblue;
+  color: #030303;
+
+}
+
+.input-field textarea{
+  margin-top: 15px;
+  background-color: rgb(70, 67, 67);
+  width: 100%;
+  height: 250px; /* Set the desired height */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none; /* Disable resizing */
+  color: white;
+
 }
