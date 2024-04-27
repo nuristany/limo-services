@@ -56,7 +56,7 @@
 }
 
 /* navbar small screen style */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 570px) {
   .navbar {
     flex-direction: column;
     padding: 10px;
