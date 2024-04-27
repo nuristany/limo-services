@@ -56,7 +56,7 @@
 }
 
 /* navbar small screen style */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .navbar {
     flex-direction: row;
     padding-top: 0px;
@@ -75,7 +75,7 @@
     margin: 5px 0;
   }
   .nav-title h1 {
-    font-size: 20px;
+    font-size: 12px;
   }
 }
 
@@ -87,12 +87,15 @@
   position: relative;
   overflow: hidden;
   width: 100%;
+  padding-top: 90px;
 }
 
 .homepage-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
   display: block;
+  
 }
 
 .homepage-text {
@@ -143,6 +146,10 @@
 /* hompage style for small screens */
 
 @media screen and (max-width: 768px) {
+
+  .homepage-container{
+    flex-direction: block;
+  }
   .homepage-text {
     flex-direction: column;
   }
@@ -223,6 +230,14 @@
   background-color: rgb(70, 67, 67);
   border: none;
   padding: 30px;
+}
+
+/* small scree style for contact form */
+
+@media screen and (max-width: 768px) {
+  .contacts-container {
+    flex-direction: column;
+  }
 }
   
   
