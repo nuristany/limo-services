@@ -284,9 +284,8 @@
 .fleet-images {
   margin-top: 20px;
   text-align: center;
- 
 }
-  
+
 .fleet-images p {
   text-transform: uppercase;
   font-size: 20px;
@@ -296,5 +295,81 @@
   margin: 10px;
   width: 300px;
   border-radius: 5px;
-  
 }
+
+/* style for about page */
+
+.about-container {
+  position: relative;
+  justify-content: center;
+  top: 6rem;
+  width: 100%;
+}
+
+.about-items {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.about-right {
+  padding: 60px;
+  width: 100%;
+  height: 100vh;
+  background-color: #3d3b3b;
+  color: white;
+}
+
+.about-right h5 {
+  color: #a39595;
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: lighter;
+}
+
+.about-right p {
+  margin-top: 10px;
+  color: #a39595;
+  font-size: 15px;
+
+}
+
+.about-left {
+  padding: 80px;
+  width: 100%;
+  height: 100vh;
+  background: white;
+}
+.about-left h3 {
+  color: #9f8e8e;
+  font-weight: lighter;
+  font-size: 30px;
+ 
+}
+.about-left p {
+  color: #9f8e8e;
+  margin-top: 10px;
+
+ 
+}
+
+.about-image{
+  width: 100%;
+  position: relative;
+}
+.about-image img{
+  width: 100%;
+  height: auto;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Adjust text color as needed */
+  text-align: center; /* Center the text horizontally */
+  z-index: 1; /* Ensure text appears above the image */
+  font-size: 16px;
+}
+
