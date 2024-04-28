@@ -14,10 +14,8 @@
   display: flex;
   align-items: center;
   padding: 20px 40px;
-  z-index: 1000; /* Adjust the value as needed */
-  
+  z-index: 3;
 }
-
 
 .logo img {
   width: 60px;
@@ -60,9 +58,6 @@
   .navbar {
     flex-direction: row;
     padding-top: 0px;
-    
-    
-   
   }
 
   .nav-items {
@@ -95,7 +90,6 @@
   height: 100%;
   object-fit: contain;
   display: block;
-  
 }
 
 .homepage-text {
@@ -146,8 +140,7 @@
 /* hompage style for small screens */
 
 @media screen and (max-width: 768px) {
-
-  .homepage-container{
+  .homepage-container {
     flex-direction: block;
   }
   .homepage-text {
@@ -157,11 +150,7 @@
   .homepage-image img {
     width: 100%;
     padding-top: 20px;
-
   }
-  
-  
-
 
   .text-left,
   .text-right {
@@ -175,14 +164,15 @@
     width: auto; /* Reset width */
     padding: 10px; /* Add padding */
     text-align: center; /* Center-align text */
-    
   }
 
-  .text-left h1, .text-right h1 {
+  .text-left h1,
+  .text-right h1 {
     font-size: 12px;
   }
 
-  .text-left p, .text-right p {
+  .text-left p,
+  .text-right p {
     font-size: 10px;
   }
 }
@@ -197,8 +187,6 @@
   width: 100%;
   height: 150vh;
   background-color: aliceblue;
-  
-  
 }
 .contact-right {
   width: 100%;
@@ -232,16 +220,13 @@
   padding: 30px;
 }
 
-/* small scree style for contact form */
+/* small screen style for contact form */
 
 @media screen and (max-width: 768px) {
   .contacts-container {
     flex-direction: column;
   }
 }
-  
-  
-  
 
 .input-field input::placeholder {
   color: rgb(134, 132, 132);
@@ -262,10 +247,9 @@
 .form-container button:hover {
   background-color: aliceblue;
   color: #030303;
-
 }
 
-.input-field textarea{
+.input-field textarea {
   margin-top: 15px;
   background-color: rgb(70, 67, 67);
   width: 100%;
@@ -276,5 +260,41 @@
   border-radius: 5px;
   resize: none; /* Disable resizing */
   color: white;
+}
 
+/* style for fleet component */
+
+.fleet-container {
+  position: relative;
+  top: 10rem;
+  z-index: 2;
+}
+
+.fleet-title {
+  text-align: center;
+}
+.fleet-title h1 {
+  margin-bottom: 20px; /* Add some space between the heading and paragraph */
+}
+
+.fleet-title p {
+  max-width: 700px; /* Set the maximum width to 50px */
+  margin: 0 auto; /* Center the paragraph horizontally */
+}
+.fleet-images {
+  margin-top: 20px;
+  text-align: center;
+ 
+}
+  
+.fleet-images p {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #3f3a3a;
+}
+.fleet-images img {
+  margin: 10px;
+  width: 300px;
+  border-radius: 5px;
+  
 }
