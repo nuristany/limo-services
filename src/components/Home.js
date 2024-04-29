@@ -1,11 +1,14 @@
 import React from "react";
-import limo from "../images/mt-0152-slide_2.jpg";
+import ImageSlider from "./ImageSlider"; // Import the ImageSlider component
+import images from "../importImages"; // Import the images array
 
 const Home = () => {
   return (
     <div className="homepage-container">
       <div className="homepage-image">
-        <img src={limo} alt="Limo" />
+        {/* <img src={limo} alt="Limo" /> */}
+        <ImageSlider images={images} /> {/* Pass the images array as props */}
+        
       </div>
       <div className="homepage-text">
         <div className="text-left">
